@@ -65,6 +65,12 @@ body{
 		#result td{
 			text-align: right;
 		}
+		.ind{
+			display: inline-block;
+			width: 0.8em;
+			height: 0.8em;
+			border-radius: 0.8em;
+		}
 
 	.copyright{
 		margin-top: 30px;

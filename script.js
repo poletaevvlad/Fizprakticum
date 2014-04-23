@@ -18,22 +18,19 @@ function startExperement(){
 		}
 		var ms = $('.m');
 		var lastN = -1;
-		var c=0, f=0;
 		var timer = setInterval(function(){
 			lastN++;
 			var r = Math.random();
 			// console.log(r);
 			if (r > 0.5){
-				c++;
 				$(ms[lastN]).addClass('c');
 				console.log("c");
 			}else{
-				f++;
 				$(ms[lastN]).addClass('f');
 				console.log("f");
 			}
-			updateResult(n,c,f);
-			if (lastN >= ms.length){
+			updateResult(n,$(".c").length,$(".f").length);
+			if (lastN > ms.length){
 				clearInterval(timer);
 			}
 		}, 100);
