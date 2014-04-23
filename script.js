@@ -29,7 +29,7 @@ function startExperement(){
 				$(ms[lastN]).addClass('f');
 				console.log("f");
 			}
-			updateResult(n,$(".c").length,$(".f").length);
+			updateResult(n,$("#field .c").length,$("#field .f").length);
 			if (lastN > ms.length){
 				clearInterval(timer);
 			}
