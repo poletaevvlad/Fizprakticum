@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html manifest="app.appcache">
+<head>
+	<meta charset="utf-8">
+	<title>Лабораторная работа 7-11</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div id="field">
+	</div>
+	<div id="description">
+		<div id="title">Работа физпрактикума 7-11</div>
+		<div id="topic">Проверка закона радиоактивного распада</div>
+
+		<div id="param">
+			<span>N<sub>0</sub>=</span>
+			<input type="number" value="0" id="paramN">
+		</div>
+
+		<button id="start" onclick="startExperement()">Начать</button>
+
+		<table id="result">
+			<tr>
+				<th>Начальное кол-во</th>
+				<td id="num_res">0</td>
+			</tr>
+			<tr>
+				<th>Кол-во распавшихся</th>
+				<td id="del_res">0</td>
+			</tr>
+			<tr>
+				<th>Кол-во не распавшихся</th>
+				<td id="stay_res">0</td>
+			</tr>
+		</table>
+		<div class="copyright">В. Полетаев. ДТЛ. 2014</div>
+	</div>
+</body>
+</html>
